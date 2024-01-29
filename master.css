@@ -1,0 +1,119 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+    background: linear-gradient(136deg, #153677, #4e085f);
+} 
+
+.todo-app{
+    width: 500px;
+    height: 700px;
+    margin: 120px auto;
+    padding: 40px 30px 70px;
+    background-color: #fff;
+    border-radius: 10px;
+} 
+
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+} 
+
+.todo-app h2 img{
+    margin-left: 5px;
+}
+
+.row{
+    margin-top: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row input{
+    background-color: rgb(234, 226, 226);
+    padding: 16px;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    width:350px;
+    font-weight: 14px;
+} 
+
+.row button{
+    margin-left: 10px;
+    background: orangered;
+    padding: 16px;
+    border-radius: 20px;
+    border: none;
+    width:100px;
+    position: relative;
+    left: -46px;
+    cursor:pointer;
+    color: white;
+    font-weight: 18px;
+} 
+
+
+ul{
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+ul li{
+    padding: 50px 5px 10px;
+    list-style: none;
+    user-select: none;
+    font-size: 17px;
+    position: relative;
+
+}
+
+ul li::before{
+    content: '';
+    background-image: url("/To-do list application/Assets/unchecked.png");
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 45px;
+    left: -33px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: rgb(205, 205, 205);
+}
+
+ul li.checked::before{
+    background-image: url("/To-do list application/Assets/checked.png");
+
+} 
+
+
+.close{
+    position: absolute;
+    right:0;    
+    top:40px;
+    width: 45px;
+    height:45px;
+    color:#555;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.close:hover{
+    background: #edeef0;
+}
